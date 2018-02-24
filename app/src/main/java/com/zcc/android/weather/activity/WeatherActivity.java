@@ -1,7 +1,7 @@
 package com.zcc.android.weather.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.zcc.android.weather.R;
 
