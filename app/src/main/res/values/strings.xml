@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Weather</string>
+
+    <string name="negative">取消</string>
+    <string name="positive">确认</string>
+    <string name="quit">退出</string>
+    <string name="setting">设置</string>
+    <string name="ps">温馨提示</string>
 </resources>

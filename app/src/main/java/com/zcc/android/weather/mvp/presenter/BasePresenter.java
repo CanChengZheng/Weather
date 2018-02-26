@@ -1,5 +1,7 @@
 package com.zcc.android.weather.mvp.presenter;
 
+import android.util.Log;
+
 import com.zcc.android.weather.mvp.model.Model;
 import com.zcc.android.weather.mvp.view.IBaseView;
 
@@ -42,7 +44,7 @@ public class BasePresenter<V extends IBaseView> {
     /**
      * 获取View的完整名称
      */
-    public String getTAG() {
+    protected String getTAG() {
         return mView.getClass().getName() + ":" + TAG;
     }
 
@@ -50,6 +52,7 @@ public class BasePresenter<V extends IBaseView> {
      * 中断正在进行的请求
      */
     private void interruptRequest() {
-        // TODO 中断请求
+        Log.d(TAG, "取消可能存在的网络请求 -- TAG -- " + getTAG());
+        Model.getInstance().interruptRequest(getTAG());
     }
 }
